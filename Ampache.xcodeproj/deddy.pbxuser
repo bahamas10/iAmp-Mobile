@@ -1,0 +1,108 @@
+// !$*UTF8*$!
+{
+	1D6058900D05DD3D006BFB54 /* Ampache */ = {
+		activeExec = 0;
+		executables = (
+			8FCF67961521B72500EE9C42 /* Ampache */,
+		);
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 8FCF67961521B72500EE9C42 /* Ampache */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* Ampache */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* Ampache */,
+		);
+		codeSenseManager = 8FCF679F1521B73900EE9C42 /* Code sense */;
+		executables = (
+			8FCF67961521B72500EE9C42 /* Ampache */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					447,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 354531109;
+			PBXWorkspaceStateSaveDate = 354531109;
+		};
+		perUserProjectItems = {
+			8FCF67CD1521B84100EE9C42 /* PBXBookmark */ = 8FCF67CD1521B84100EE9C42 /* PBXBookmark */;
+			8FCF67E91521B8BE00EE9C42 /* PBXBookmark */ = 8FCF67E91521B8BE00EE9C42 /* PBXBookmark */;
+			8FCF67EB1521B8BE00EE9C42 /* PBXBookmark */ = 8FCF67EB1521B8BE00EE9C42 /* PBXBookmark */;
+		};
+		sourceControlManager = 8FCF679E1521B73900EE9C42 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	8FCF67961521B72500EE9C42 /* Ampache */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Ampache;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	8FCF679E1521B73900EE9C42 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	8FCF679F1521B73900EE9C42 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	8FCF67CD1521B84100EE9C42 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 8FCF67B11521B7B400EE9C42 /* BlankAlbum.jpg */;
+	};
+	8FCF67E91521B8BE00EE9C42 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 8FCF67B01521B7B400EE9C42 /* BarSongs.png */;
+	};
+	8FCF67EB1521B8BE00EE9C42 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 8FCF67B01521B7B400EE9C42 /* BarSongs.png */;
+	};
+}

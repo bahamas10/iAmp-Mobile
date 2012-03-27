@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* AmpacheAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AmpacheAppDelegate.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		5545213A12771D4E0056DD58 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5545213912771D4E0056DD58 /* AVFoundation.framework */; };
+		5545225D127753150056DD58 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5545225C127753150056DD58 /* MediaPlayer.framework */; };
+		5545225F127753180056DD58 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5545225E127753180056DD58 /* AudioToolbox.framework */; };
+		554522611277531C0056DD58 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554522601277531C0056DD58 /* CFNetwork.framework */; };
+		8FCF67B61521B7B400EE9C42 /* BarAlbums.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FCF67AC1521B7B400EE9C42 /* BarAlbums.png */; };
+		8FCF67B71521B7B400EE9C42 /* BarArtists.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FCF67AD1521B7B400EE9C42 /* BarArtists.png */; };
+		8FCF67B81521B7B400EE9C42 /* BarComposers.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FCF67AE1521B7B400EE9C42 /* BarComposers.png */; };
+		8FCF67B91521B7B400EE9C42 /* BarPlaylists.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FCF67AF1521B7B400EE9C42 /* BarPlaylists.png */; };
+		8FCF67BA1521B7B400EE9C42 /* BarSongs.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FCF67B01521B7B400EE9C42 /* BarSongs.png */; };
+		8FCF67BB1521B7B400EE9C42 /* BlankAlbum.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8FCF67B11521B7B400EE9C42 /* BlankAlbum.jpg */; };
+		8FCF67BC1521B7B400EE9C42 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FCF67B21521B7B400EE9C42 /* Default.png */; };
+		8FCF67BD1521B7B400EE9C42 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FCF67B31521B7B400EE9C42 /* settings.png */; };
+		8FCF67BE1521B7B400EE9C42 /* ViridianApp-64x64.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FCF67B41521B7B400EE9C42 /* ViridianApp-64x64.png */; };
+		8FCF67BF1521B7B400EE9C42 /* ViridianSimple.png in Resources */ = {isa = PBXBuildFile; fileRef = 8FCF67B51521B7B400EE9C42 /* ViridianSimple.png */; };
+		8FCF67C51521B80100EE9C42 /* ArtistsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FCF67C01521B80100EE9C42 /* ArtistsViewController.xib */; };
+		8FCF67C61521B80100EE9C42 /* FirstTimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FCF67C11521B80100EE9C42 /* FirstTimeViewController.xib */; };
+		8FCF67C71521B80100EE9C42 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FCF67C21521B80100EE9C42 /* MainWindow.xib */; };
+		8FCF67C81521B80100EE9C42 /* NowPlayingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FCF67C31521B80100EE9C42 /* NowPlayingViewController.xib */; };
+		8FCF67C91521B80100EE9C42 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FCF67C41521B80100EE9C42 /* SettingsViewController.xib */; };
+		8FCF67CC1521B82B00EE9C42 /* AudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCF67CB1521B82B00EE9C42 /* AudioStreamer.m */; };
+		8FCF67D31521B85800EE9C42 /* AmpacheSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCF67D21521B85800EE9C42 /* AmpacheSession.m */; };
+		8FCF67E01521B88D00EE9C42 /* AlbumsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCF67DA1521B88D00EE9C42 /* AlbumsViewController.m */; };
+		8FCF67E11521B88D00EE9C42 /* ArtistsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCF67DB1521B88D00EE9C42 /* ArtistsViewController.m */; };
+		8FCF67E21521B88D00EE9C42 /* FirstTimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCF67DC1521B88D00EE9C42 /* FirstTimeViewController.m */; };
+		8FCF67E31521B88D00EE9C42 /* NowPlayingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCF67DD1521B88D00EE9C42 /* NowPlayingViewController.m */; };
+		8FCF67E41521B88D00EE9C42 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCF67DE1521B88D00EE9C42 /* SettingsViewController.m */; };
+		8FCF67E51521B88D00EE9C42 /* SongsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCF67DF1521B88D00EE9C42 /* SongsViewController.m */; };
+		8FCF67E81521B8AA00EE9C42 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCF67E71521B8AA00EE9C42 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* AmpacheAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmpacheAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* AmpacheAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmpacheAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* Ampache.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ampache.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5545213912771D4E0056DD58 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5545225C127753150056DD58 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		5545225E127753180056DD58 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		554522601277531C0056DD58 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		8D1107310486CEB800E47090 /* Ampache-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Ampache-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		8FCF67AC1521B7B400EE9C42 /* BarAlbums.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BarAlbums.png; path = Resources/BarAlbums.png; sourceTree = "<group>"; };
+		8FCF67AD1521B7B400EE9C42 /* BarArtists.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BarArtists.png; path = Resources/BarArtists.png; sourceTree = "<group>"; };
+		8FCF67AE1521B7B400EE9C42 /* BarComposers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BarComposers.png; path = Resources/BarComposers.png; sourceTree = "<group>"; };
+		8FCF67AF1521B7B400EE9C42 /* BarPlaylists.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BarPlaylists.png; path = Resources/BarPlaylists.png; sourceTree = "<group>"; };
+		8FCF67B01521B7B400EE9C42 /* BarSongs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BarSongs.png; path = Resources/BarSongs.png; sourceTree = "<group>"; };
+		8FCF67B11521B7B400EE9C42 /* BlankAlbum.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = BlankAlbum.jpg; path = Resources/BlankAlbum.jpg; sourceTree = "<group>"; };
+		8FCF67B21521B7B400EE9C42 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Resources/Default.png; sourceTree = "<group>"; };
+		8FCF67B31521B7B400EE9C42 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings.png; path = Resources/settings.png; sourceTree = "<group>"; };
+		8FCF67B41521B7B400EE9C42 /* ViridianApp-64x64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ViridianApp-64x64.png"; path = "Resources/ViridianApp-64x64.png"; sourceTree = "<group>"; };
+		8FCF67B51521B7B400EE9C42 /* ViridianSimple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ViridianSimple.png; path = Resources/ViridianSimple.png; sourceTree = "<group>"; };
+		8FCF67C01521B80100EE9C42 /* ArtistsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ArtistsViewController.xib; path = Resources/ArtistsViewController.xib; sourceTree = "<group>"; };
+		8FCF67C11521B80100EE9C42 /* FirstTimeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FirstTimeViewController.xib; path = Resources/FirstTimeViewController.xib; sourceTree = "<group>"; };
+		8FCF67C21521B80100EE9C42 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainWindow.xib; path = Resources/MainWindow.xib; sourceTree = "<group>"; };
+		8FCF67C31521B80100EE9C42 /* NowPlayingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = NowPlayingViewController.xib; path = Resources/NowPlayingViewController.xib; sourceTree = "<group>"; };
+		8FCF67C41521B80100EE9C42 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SettingsViewController.xib; path = Resources/SettingsViewController.xib; sourceTree = "<group>"; };
+		8FCF67CA1521B82B00EE9C42 /* AudioStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioStreamer.h; path = AudioStreamer/AudioStreamer.h; sourceTree = "<group>"; };
+		8FCF67CB1521B82B00EE9C42 /* AudioStreamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudioStreamer.m; path = AudioStreamer/AudioStreamer.m; sourceTree = "<group>"; };
+		8FCF67D11521B85800EE9C42 /* AmpacheSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AmpacheSession.h; path = AmpacheSession/AmpacheSession.h; sourceTree = "<group>"; };
+		8FCF67D21521B85800EE9C42 /* AmpacheSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AmpacheSession.m; path = AmpacheSession/AmpacheSession.m; sourceTree = "<group>"; };
+		8FCF67D41521B88D00EE9C42 /* AlbumsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlbumsViewController.h; path = "View Controllers/AlbumsViewController.h"; sourceTree = "<group>"; };
+		8FCF67D51521B88D00EE9C42 /* ArtistsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArtistsViewController.h; path = "View Controllers/ArtistsViewController.h"; sourceTree = "<group>"; };
+		8FCF67D61521B88D00EE9C42 /* FirstTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstTimeViewController.h; path = "View Controllers/FirstTimeViewController.h"; sourceTree = "<group>"; };
+		8FCF67D71521B88D00EE9C42 /* NowPlayingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NowPlayingViewController.h; path = "View Controllers/NowPlayingViewController.h"; sourceTree = "<group>"; };
+		8FCF67D81521B88D00EE9C42 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsViewController.h; path = "View Controllers/SettingsViewController.h"; sourceTree = "<group>"; };
+		8FCF67D91521B88D00EE9C42 /* SongsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SongsViewController.h; path = "View Controllers/SongsViewController.h"; sourceTree = "<group>"; };
+		8FCF67DA1521B88D00EE9C42 /* AlbumsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlbumsViewController.m; path = "View Controllers/AlbumsViewController.m"; sourceTree = "<group>"; };
+		8FCF67DB1521B88D00EE9C42 /* ArtistsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArtistsViewController.m; path = "View Controllers/ArtistsViewController.m"; sourceTree = "<group>"; };
+		8FCF67DC1521B88D00EE9C42 /* FirstTimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstTimeViewController.m; path = "View Controllers/FirstTimeViewController.m"; sourceTree = "<group>"; };
+		8FCF67DD1521B88D00EE9C42 /* NowPlayingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NowPlayingViewController.m; path = "View Controllers/NowPlayingViewController.m"; sourceTree = "<group>"; };
+		8FCF67DE1521B88D00EE9C42 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsViewController.m; path = "View Controllers/SettingsViewController.m"; sourceTree = "<group>"; };
+		8FCF67DF1521B88D00EE9C42 /* SongsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SongsViewController.m; path = "View Controllers/SongsViewController.m"; sourceTree = "<group>"; };
+		8FCF67E61521B8AA00EE9C42 /* Ampache_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Ampache_Prefix.pch; path = "Other Sources/Ampache_Prefix.pch"; sourceTree = "<group>"; };
+		8FCF67E71521B8AA00EE9C42 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Other Sources/main.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				5545213A12771D4E0056DD58 /* AVFoundation.framework in Frameworks */,
+				5545225D127753150056DD58 /* MediaPlayer.framework in Frameworks */,
+				5545225F127753180056DD58 /* AudioToolbox.framework in Frameworks */,
+				554522611277531C0056DD58 /* CFNetwork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* AmpacheAppDelegate.h */,
+				1D3623250D0F684500981E51 /* AmpacheAppDelegate.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Ampache.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				5545224C127752630056DD58 /* AudioStreamer */,
+				55934BE71264062D00245AA1 /* AmpacheSession */,
+				5581A81A126BDECA00BF3B57 /* View Controllers */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				5545213912771D4E0056DD58 /* AVFoundation.framework */,
+				5545225C127753150056DD58 /* MediaPlayer.framework */,
+				5545225E127753180056DD58 /* AudioToolbox.framework */,
+				554522601277531C0056DD58 /* CFNetwork.framework */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8FCF67E61521B8AA00EE9C42 /* Ampache_Prefix.pch */,
+				8FCF67E71521B8AA00EE9C42 /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8FCF67C01521B80100EE9C42 /* ArtistsViewController.xib */,
+				8FCF67C11521B80100EE9C42 /* FirstTimeViewController.xib */,
+				8FCF67C21521B80100EE9C42 /* MainWindow.xib */,
+				8FCF67C31521B80100EE9C42 /* NowPlayingViewController.xib */,
+				8FCF67C41521B80100EE9C42 /* SettingsViewController.xib */,
+				8FCF67AC1521B7B400EE9C42 /* BarAlbums.png */,
+				8FCF67AD1521B7B400EE9C42 /* BarArtists.png */,
+				8FCF67AE1521B7B400EE9C42 /* BarComposers.png */,
+				8FCF67AF1521B7B400EE9C42 /* BarPlaylists.png */,
+				8FCF67B01521B7B400EE9C42 /* BarSongs.png */,
+				8FCF67B11521B7B400EE9C42 /* BlankAlbum.jpg */,
+				8FCF67B21521B7B400EE9C42 /* Default.png */,
+				8FCF67B31521B7B400EE9C42 /* settings.png */,
+				8FCF67B41521B7B400EE9C42 /* ViridianApp-64x64.png */,
+				8FCF67B51521B7B400EE9C42 /* ViridianSimple.png */,
+				8D1107310486CEB800E47090 /* Ampache-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5545224C127752630056DD58 /* AudioStreamer */ = {
+			isa = PBXGroup;
+			children = (
+				8FCF67CA1521B82B00EE9C42 /* AudioStreamer.h */,
+				8FCF67CB1521B82B00EE9C42 /* AudioStreamer.m */,
+			);
+			name = AudioStreamer;
+			sourceTree = "<group>";
+		};
+		5581A81A126BDECA00BF3B57 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8FCF67D41521B88D00EE9C42 /* AlbumsViewController.h */,
+				8FCF67D51521B88D00EE9C42 /* ArtistsViewController.h */,
+				8FCF67D61521B88D00EE9C42 /* FirstTimeViewController.h */,
+				8FCF67D71521B88D00EE9C42 /* NowPlayingViewController.h */,
+				8FCF67D81521B88D00EE9C42 /* SettingsViewController.h */,
+				8FCF67D91521B88D00EE9C42 /* SongsViewController.h */,
+				8FCF67DA1521B88D00EE9C42 /* AlbumsViewController.m */,
+				8FCF67DB1521B88D00EE9C42 /* ArtistsViewController.m */,
+				8FCF67DC1521B88D00EE9C42 /* FirstTimeViewController.m */,
+				8FCF67DD1521B88D00EE9C42 /* NowPlayingViewController.m */,
+				8FCF67DE1521B88D00EE9C42 /* SettingsViewController.m */,
+				8FCF67DF1521B88D00EE9C42 /* SongsViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		55934BE71264062D00245AA1 /* AmpacheSession */ = {
+			isa = PBXGroup;
+			children = (
+				8FCF67D11521B85800EE9C42 /* AmpacheSession.h */,
+				8FCF67D21521B85800EE9C42 /* AmpacheSession.m */,
+			);
+			name = AmpacheSession;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Ampache */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Ampache" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ampache;
+			productName = Ampache;
+			productReference = 1D6058910D05DD3D006BFB54 /* Ampache.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Ampache" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Ampache */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FCF67B61521B7B400EE9C42 /* BarAlbums.png in Resources */,
+				8FCF67B71521B7B400EE9C42 /* BarArtists.png in Resources */,
+				8FCF67B81521B7B400EE9C42 /* BarComposers.png in Resources */,
+				8FCF67B91521B7B400EE9C42 /* BarPlaylists.png in Resources */,
+				8FCF67BA1521B7B400EE9C42 /* BarSongs.png in Resources */,
+				8FCF67BB1521B7B400EE9C42 /* BlankAlbum.jpg in Resources */,
+				8FCF67BC1521B7B400EE9C42 /* Default.png in Resources */,
+				8FCF67BD1521B7B400EE9C42 /* settings.png in Resources */,
+				8FCF67BE1521B7B400EE9C42 /* ViridianApp-64x64.png in Resources */,
+				8FCF67BF1521B7B400EE9C42 /* ViridianSimple.png in Resources */,
+				8FCF67C51521B80100EE9C42 /* ArtistsViewController.xib in Resources */,
+				8FCF67C61521B80100EE9C42 /* FirstTimeViewController.xib in Resources */,
+				8FCF67C71521B80100EE9C42 /* MainWindow.xib in Resources */,
+				8FCF67C81521B80100EE9C42 /* NowPlayingViewController.xib in Resources */,
+				8FCF67C91521B80100EE9C42 /* SettingsViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D3623260D0F684500981E51 /* AmpacheAppDelegate.m in Sources */,
+				8FCF67CC1521B82B00EE9C42 /* AudioStreamer.m in Sources */,
+				8FCF67D31521B85800EE9C42 /* AmpacheSession.m in Sources */,
+				8FCF67E01521B88D00EE9C42 /* AlbumsViewController.m in Sources */,
+				8FCF67E11521B88D00EE9C42 /* ArtistsViewController.m in Sources */,
+				8FCF67E21521B88D00EE9C42 /* FirstTimeViewController.m in Sources */,
+				8FCF67E31521B88D00EE9C42 /* NowPlayingViewController.m in Sources */,
+				8FCF67E41521B88D00EE9C42 /* SettingsViewController.m in Sources */,
+				8FCF67E51521B88D00EE9C42 /* SongsViewController.m in Sources */,
+				8FCF67E81521B8AA00EE9C42 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Ampache_Prefix.pch;
+				INFOPLIST_FILE = "Ampache-Info.plist";
+				PRODUCT_NAME = Ampache;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Ampache_Prefix.pch;
+				INFOPLIST_FILE = "Ampache-Info.plist";
+				PRODUCT_NAME = Ampache;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Ampache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Ampache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
