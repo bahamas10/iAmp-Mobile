@@ -37,7 +37,6 @@
 <li> <a href="#features">Features</a>
 </li>
 <li> <a href="#competition">Competition</a>
-
 <ul>
 <li>  <a href="#iphone">iPhone</a>
 </li>
@@ -46,7 +45,6 @@
 </ul>
 </li>
 <li> <a href="#ui">The User Interface (screenshots)</a>
-
 <ul>
 <li>  <a href="#nowplaying">Now Playing</a>
 </li>
@@ -66,7 +64,7 @@
 </li>
 </ol><p> </p>
 
-<h1>Application Definition Statement</h1>
+<h1 id="appdef">Application Definition Statement</h1>
 
 <h2>What is it?</h2>
 
@@ -82,7 +80,7 @@
 
 <p> </p>
 
-<h1>Features</h1>
+<h1 id="features">Features</h1>
 
 <p>Some of the stand-out features of the Ampache iPhone Client.</p>
 
@@ -95,9 +93,9 @@
 <li>  A UI similar to the iPod app so it can be easily understood</li>
 </ul><p></p>
 
-<h1>Competition</h1>
+<h1 id="competition">Competition</h1>
 
-<h2>iPhone</h2>
+<h2 id="iphone">iPhone</h2>
 
 <h3>iAmpache</h3>
 
@@ -111,7 +109,7 @@
 
 <p></p>
 
-<h2>Android</h2>
+<h2 id="android">Android</h2>
 
 <h3>Lullaby</h3>
 
@@ -125,13 +123,13 @@
 
 <p> </p>
 
-<h1>The User Interface</h1>
+<h1 id="ui">The User Interface</h1>
 
 <p>The Interface is simple enough to understand, an early version of the Application can be seen below.</p>
 
 <p> </p>
 
-<h2>The Now Playing Screen</h2>
+<h2 id="nowplaying">The Now Playing Screen</h2>
 
 <p>The album art can be slid with the users finger up to reveal the playback controls, like play, pause, next, previous, progress bar, etc.</p>
 
@@ -139,7 +137,7 @@
 
 <p> </p>
 
-<h2>The Artists View Controller</h2>
+<h2 id="artists">The Artists View Controller</h2>
 
 <p><img src="images/artists.png" alt="Artists"></p>
 
@@ -155,7 +153,7 @@
 
 <p> </p>
 
-<h1>Settings</h1>
+<h1 id="settings">Settings</h1>
 
 <p>This screen shows what this program needs to know in order to authenticate to the server. The username, password, and the servers URL.</p>
 
@@ -163,7 +161,7 @@
 
 <p> </p>
 
-<h1>Wish List</h1>
+<h1 id="wishlist">Wish List</h1>
 
 <ul>
 <li>  Caching of the catalog for fast response times on the iPhone
@@ -181,13 +179,11 @@
 <li>  Landscape Support</li>
 </ul><p> </p>
 
-<h1>Classes Used (and created)</h1>
+<h1 id="classes">Classes Used (and created)</h1>
 
 <p>The classes used in this project can be seen in this screenshot of Xcode</p>
 
 <p><img src="images/classes.png" alt="Classes"></p>
-
-<h2>Classes</h2>
 
 <h3>AudioStreamer</h3>
 
@@ -208,7 +204,7 @@
 <li>  <strong>FirstTimeViewController</strong> - This is the modal view that gets presented when the user has no credentials set</li>
 </ul><p> </p>
 
-<h1>Above and Beyond</h1>
+<h1 id="aboveandbeyend">Above and Beyond</h1>
 
 <p>For this project I went above and beyond in the Now Playing View controller. When the view controller is loaded as a result of a song being selected, it loads the song information into labels for the user to see, and then loads the "blank album" album art. Now, using NSURLConnection and non-blocking techniques, I query Ampache for the album art of the current song and load it in the background. When the album art is fully loaded it will take over the default "no album art found" picture, so it does not block the user input at all.</p>
 
@@ -226,13 +222,13 @@
 </ul><p>Modules can be downloaded here</p>
 
 <ul>
-<li>  Wordpress</li>
+<li>Wordpress</li>
 <li><p><a href="http://wordpress.org/extend/plugins/ampachenowplaying/">http://wordpress.org/extend/plugins/ampachenowplaying/</a> (Approved)</p></li>
-<li><p>Drupal</p></li>
+<li><Drupal</li>
 <li><p><a href="https://launchpad.net/ampachenowplaying-drupal">https://launchpad.net/ampachenowplaying-drupal</a> (Not Yet Approved)</p></li>
 </ul><p> </p>
 
-<h1>Grade Myself</h1>
+<h1 id="grademyself">Grade Myself</h1>
 
 <h2>Key Elements</h2>
 
@@ -253,6 +249,5 @@
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
-    
   </body>
 </html>
