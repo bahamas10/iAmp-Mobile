@@ -1,0 +1,258 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>IAmp-mobile by bahamas10</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>IAmp-mobile</h1>
+        <p>Ampache Client for iOS devices</p>
+        <p class="view"><a href="https://github.com/bahamas10/iAmp-Mobile">View the Project on GitHub <small>bahamas10/iAmp-Mobile</small></a></p>
+        <ul>
+          <li><a href="https://github.com/bahamas10/iAmp-Mobile/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/bahamas10/iAmp-Mobile/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/bahamas10/iAmp-Mobile">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>Ampache iPhone Client</h1>
+
+<h2>Music streamer for the iPhone, by Dave Eddy</h2>
+
+<p>All code written by me for this project is released under the BSD license in hopes that somebody will pick up this project, be able to benefit from it, and make this app something good! </p>
+
+<hr><ol>
+<li> <a href="#appdef">Application Definition Statement</a>
+</li>
+<li> <a href="#features">Features</a>
+</li>
+<li> <a href="#competition">Competition</a>
+
+<ul>
+<li>  <a href="#iphone">iPhone</a>
+</li>
+<li>  <a href="#android">Android</a>
+</li>
+</ul>
+</li>
+<li> <a href="#ui">The User Interface (screenshots)</a>
+
+<ul>
+<li>  <a href="#nowplaying">Now Playing</a>
+</li>
+<li>  <a href="#artists">Artists</a>
+</li>
+<li>  <a href="#settings">Settings</a>
+</li>
+</ul>
+</li>
+<li> <a href="#wishlist">Wish List</a>
+</li>
+<li> <a href="#classes">Classes Used (and created)</a>
+</li>
+<li> <a href="#aboveandbeyond">Above and Beyond</a>
+</li>
+<li> <a href="#grademyself">Grade Myself</a>
+</li>
+</ol><p> </p>
+
+<h1>Application Definition Statement</h1>
+
+<h2>What is it?</h2>
+
+<p>The Ampache iPhone Client is a music player/streaming app for the iPhone. This app is a front-end to an open-source web service that catalogs and indexes your music collection, and allows it to be streamed anywhere over the Internet.</p>
+
+<p>The web service is called Ampache (<a href="http://ampache.org">http://ampache.org</a>) and it can be run on your own personal computer/server running a webserver.  At the core, Ampache is just PHP files that hook into a MySQL database. Ampache has an API that works using xmlrpc commands, and my goal is to be able to communicate with the server using the iPhone, and create a nice iPod-style app for Ampache.</p>
+
+<h2>Who is it for?</h2>
+
+<p>This app is for people who have more music than their iPhone will hold, or people who are already using Ampache. Ampache's catalog is limited only to the amount of hard drive space you have on your server, so the iPhone can now access all of your music that wouldn't fit on the iPhone.</p>
+
+<p>This app is also great because a user can get an mp3 file, drop it in their server (remotely), and then the Ampache iPhone app will pick it up without having to be synced to the iPhone.</p>
+
+<p> </p>
+
+<h1>Features</h1>
+
+<p>Some of the stand-out features of the Ampache iPhone Client.</p>
+
+<ul>
+<li>  Stores Ampache URL, username, and password for ease of use</li>
+<li>  A music focused now playing screen (centered on the album art)</li>
+<li>  Lazy loading for the heavy lifting (like pulling hi res album art)</li>
+<li>  Modal view for first time users</li>
+<li>  Ability to stream music from your personal collection anywhere you have Internet access</li>
+<li>  A UI similar to the iPod app so it can be easily understood</li>
+</ul><p></p>
+
+<h1>Competition</h1>
+
+<h2>iPhone</h2>
+
+<h3>iAmpache</h3>
+
+<p><a href="http://iampache.com/">http://iampache.com/</a></p>
+
+<p>iAmpache is a free app in the appstore now that accomplishes the same goal as this application: streaming music from an Ampache server anywhere in the world. I have used this app, but found it lacking in certain areas. iAmpache is limited in that it will not stream unless the user is on WiFi. Although this restriction is probably set by Apple in order for the app to be accepted into the app store, I still view this as a limitation and want my App to work whenever the user has any access to the internet.</p>
+
+<p>At the time of this writing, iAmpache also does not cache any of the information it pulls from the server. Everytime the user starts iAmpache, the whole list of Artists is pulled from the server, which can take time compared to caching the data locally, and querying the server to see if the catalog has been updated (because if it hasn't there is no reason to pull the list from the server).</p>
+
+<p>I have also noticed that after using iAmpache for ~30 minutes, it typically causes my phone to crash (3GS). I'm assuming there are some memory leaks going undetected in the app.</p>
+
+<p></p>
+
+<h2>Android</h2>
+
+<h3>Lullaby</h3>
+
+<p><a href="http://ampache.org/blog/2010/06/03/new-android-client-for-ampache-lullaby-in-the-market-now/">http://ampache.org/blog/2010/06/03/new-android-client-for-ampache-lullaby-in-the-market-now/</a></p>
+
+<p>Lullaby mimics the interface of the default android Music player app, and implements a complete lazy loading interface</p>
+
+<p>Where iAmpache implements no lazy loading at all, by blocking the UI completely, Lullay implements it without alerting the user of anything, so sometimes you click something and you are not sure if it is working or not. It implements a caching mechanism to decrease the loading times, and natively runs in the background.</p>
+
+<p>Using it is simple, and is very easy after using the Android Music App. It does not watch for key events however. For instance, when the user pulls the headphones out, the music will continue to play out of the built in speaker (whereas the default behavior should be to pause it).</p>
+
+<p> </p>
+
+<h1>The User Interface</h1>
+
+<p>The Interface is simple enough to understand, an early version of the Application can be seen below.</p>
+
+<p> </p>
+
+<h2>The Now Playing Screen</h2>
+
+<p>The album art can be slid with the users finger up to reveal the playback controls, like play, pause, next, previous, progress bar, etc.</p>
+
+<p><img src="images/nowplaying.png" alt="Now Playing"></p>
+
+<p> </p>
+
+<h2>The Artists View Controller</h2>
+
+<p><img src="images/artists.png" alt="Artists"></p>
+
+<h4>Clicking an Artist will bring you to the Albums view controller.</h4>
+
+<p><img src="images/albums.png" alt="Albums"></p>
+
+<h4>Clicking an Album will bring you to the Song view contoller.</h4>
+
+<p><img src="images/songs.png" alt="Songs"></p>
+
+<p>Finally clicking a song will load the "Now Playing" screen which will show the current song, the time elapsed of the song, and the previous, pause, and next buttons.</p>
+
+<p> </p>
+
+<h1>Settings</h1>
+
+<p>This screen shows what this program needs to know in order to authenticate to the server. The username, password, and the servers URL.</p>
+
+<p><img src="images/settings" alt="Settings"></p>
+
+<p> </p>
+
+<h1>Wish List</h1>
+
+<ul>
+<li>  Caching of the catalog for fast response times on the iPhone
+
+<ul>
+<li>  This could be done easily by creating a sqlite database with 3 tables, artists, albums, and songs. As the user clicks through their music, this program should first check to see if the information exists locally in the database, and if not fallback on querying the Ampache server, and then storing that information in the database.</li>
+</ul>
+</li>
+<li>  Streaming music in the background
+
+<ul>
+<li>  Register this app as a music streaming service that can continue to run in the background on the iPhone. This would behave similiarly to the iPhone Pandora or Shoutcast client</li>
+</ul>
+</li>
+<li>  Landscape Support</li>
+</ul><p> </p>
+
+<h1>Classes Used (and created)</h1>
+
+<p>The classes used in this project can be seen in this screenshot of Xcode</p>
+
+<p><img src="images/classes.png" alt="Classes"></p>
+
+<h2>Classes</h2>
+
+<h3>AudioStreamer</h3>
+
+<p>The AudioStreamer class I used was taken from this site <a href="https://github.com/mattgallagher/AudioStreamer">https://github.com/mattgallagher/AudioStreamer</a>. This class is released under a free open-source license that allows it to be used in both commercial and personal applications, so long as the license stays in the source code, and attribution is appreciated but not required. This class makes it easy to pass a URL to an mp3 stream to it, and play the song in a background thread that keeps communication open by using NSNotifications. Streaming mp3s on the iPhone proved to not be a simple task, and in investigating the competition I found that this AudioStreamer class was used in the iAmpache client (by investigating the error messages), and that it was used in all of the SubSonic clients (the Ampache competition).</p>
+
+<h3>AmpacheSession</h3>
+
+<p>This is a class that I wrote myself for use with communicating to Ampache via the API. This class is able to authenticate to the server and hold the authentication token that the server gives, and then query Ampache for the music inside the server. This class uses NSXMLParser under the hood to take the responses from the server and present them to the user in a meaningful way. This class also takes care of starting and stopping the spinning activity indicator when a connection is made and completed to the Ampache server. Because of the nature of the XML Parser (being event driven), this class could easily be extended to allow for all communications with the Ampache API.</p>
+
+<h3>View Controllers</h3>
+
+<ul>
+<li>  <strong>SettingsViewController</strong> - The view for the settings</li>
+<li>  <strong>ArtistsViewController</strong> - The view for the list of artists</li>
+<li>  <strong>AlbumsViewController</strong> - The view for the list of albums by an artist</li>
+<li>  <strong>SongsViewController</strong> - The view for the list of songs on an album</li>
+<li>  <strong>NowPlayingViewController</strong> - This class holds onto the current playing song information, and is alerted everytime the song changes.</li>
+<li>  <strong>FirstTimeViewController</strong> - This is the modal view that gets presented when the user has no credentials set</li>
+</ul><p> </p>
+
+<h1>Above and Beyond</h1>
+
+<p>For this project I went above and beyond in the Now Playing View controller. When the view controller is loaded as a result of a song being selected, it loads the song information into labels for the user to see, and then loads the "blank album" album art. Now, using NSURLConnection and non-blocking techniques, I query Ampache for the album art of the current song and load it in the background. When the album art is fully loaded it will take over the default "no album art found" picture, so it does not block the user input at all.</p>
+
+<p>Also, in the now playing view controller, I watch for touch events from the user. If the user swipes up or down it will slide the album art up or down, revealing extra information about the song. The default view will have the song information on the top, and the album art below it. If the user swipes the album art up, the song information will be covered and a progress bar will be revealed showing the current position in the song and the time elapsed.</p>
+
+<p>I have written a plugin for wordpress, and a module for drupal that can be used to display your currently playing song on Ampache</p>
+
+<p>Demos can be seen here:</p>
+
+<ul>
+<li>  <a href="http://drupal.daveeddy.com">http://drupal.daveeddy.com</a>
+</li>
+<li>  <a href="http://wordpress.daveeddy.com">http://wordpress.daveeddy.com</a>
+</li>
+</ul><p>Modules can be downloaded here</p>
+
+<ul>
+<li>  Wordpress</li>
+<li><p><a href="http://wordpress.org/extend/plugins/ampachenowplaying/">http://wordpress.org/extend/plugins/ampachenowplaying/</a> (Approved)</p></li>
+<li><p>Drupal</p></li>
+<li><p><a href="https://launchpad.net/ampachenowplaying-drupal">https://launchpad.net/ampachenowplaying-drupal</a> (Not Yet Approved)</p></li>
+</ul><p> </p>
+
+<h1>Grade Myself</h1>
+
+<h2>Key Elements</h2>
+
+<ul>
+<li>  The application pulls all of the data from an Ampache server, and allows the user to stream all songs in their personal collection with the iPhone, with a UI that is similar to that of the iPod app built into the iPhone and the iPod touches.</li>
+<li>  The data is pulled completely from the server, so whoever uses this app, the information in it will reflect exactly what is on their server.</li>
+<li>  This app uses notifications to alert itself of events with the audiostreamer, that i have trapped and updated the user interface with.</li>
+<li>  The now playing interface uses lazy loading to do the heavy lifting, which is pulling the album art.</li>
+<li>  The whole interface is encapsulated in a tab bar controller, so the user always knows where they are.</li>
+<li>  The app holds the users credentials, and authenticates automatically everytime the application is opened.</li>
+<li>  Spinners are used to alert the user that the Ampache server is being queried, so the whole application doesn't look like it locked up.</li>
+<li>  The app will probably be rejected by apple, but right now it allows streaming over 3G, so that's an amazing feature in itself.</li>
+</ul><p>I worked until I had every feature I wanted in this app, and the user interface was easily navigable to someone who has never used this app before. Because of this I consider this an A Project.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/bahamas10">bahamas10</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
